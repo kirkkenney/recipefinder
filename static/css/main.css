@@ -1,0 +1,313 @@
+@media only screen and (max-width: 768px) {
+
+body {
+    text-align: center;
+    color: #371a4b;
+    background: linear-gradient(rgba(41,41,122,.4), rgba(41,41,122,.4)),
+    url('../images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1% .5%;
+    background: #f8eee7;
+    box-sizing: border-box;
+    border-bottom: solid 2px #887bd4;
+    padding: 2% 0;
+}
+
+#search {
+    font-size: 12px;
+    padding: 1.5%;
+    float: left;
+    margin: 0 2%;
+    width: 40%;
+    background-color: rgb(6,47,79);
+    border: rgb(6,47,79);
+    color: rgb(248,238,231);
+    font-weight: bold;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+#search:focus {
+    background-color: rgb(248,238,231);
+    color: rgb(6,47,79);
+    border: solid .5px rgb(6,47,79);
+}
+
+#add {
+    font-size: 12px;
+    padding: 1.5% 2%;
+    float: right;
+    margin: 0 2%;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 100%;
+    padding: 5%;
+    margin-top: 10%;
+}
+
+button, input[type="submit"] {
+    background-color: #062f4f;
+    color: #f8eee7;
+    border: solid 1px #062f4f;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(248,238,231);
+    color: rgb(41,41,122);
+    border: solid .5px rgb(41,41,122);
+    transition: .5s;
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(248,238,231);
+    color: rgb(41,41,122);
+    border: solid .5px rgb(41,41,122);
+    transition: .5s;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 98%;
+    height: 20vh;
+    margin: 2% 0;
+    background-color: white;
+    position: relative;
+    background-color: #f8eee7;
+    border-radius: 40px 0 0 40px;
+    border: solid 2px #887bd4;
+    overflow: hidden;
+}
+
+.img-left {
+    width: 35%;
+    height: 100%;
+    overflow: hidden !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.info-right {
+    height: 100%;
+    width: 65%;
+    float: right;
+    margin-top: 0;
+
+}
+
+h2.title {
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: 1%;
+}
+
+p.desc {
+    font-size: 14px;
+    width: 98%;
+    text-align: center;
+    margin: 0 1%;
+}
+
+.time-to-cook {
+    position: absolute;
+    right: 34%;
+    bottom: 0;
+    margin: 0;
+    width: 31%;
+    background-color: #062f4f;
+    color: #f8eee7;
+    border: #062f4f;
+    padding: 2% 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 25%;
+}
+
+#recipeSubmit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 31%;
+    padding: 1% 0;
+    font-size: 12px;
+    height: 25%;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+body {
+    text-align: center;
+    color: #371a4b;
+    background: linear-gradient(rgba(41,41,122,.4), rgba(41,41,122,.4)),
+    url('../images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .5%;
+    background: #f8eee7;
+    box-sizing: border-box;
+    border-bottom: solid 4px #887bd4;
+}
+
+#search {
+    font-size: 1.2vw;
+    padding: 1%;
+    float: left;
+    margin: 0 2%;
+    width: 25%;
+    background-color: rgb(6,47,79);
+    border: rgb(6,47,79);
+    color: rgb(248,238,231);
+    font-weight: bold;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+#search:focus {
+    background-color: rgb(248,238,231);
+    color: rgb(6,47,79);
+    border: solid 1px rgb(6,47,79);
+}
+
+#add {
+    font-size: 1.2vw;
+    padding: 1% 2%;
+    float: right;
+    margin: 0 2%;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 100%;
+    padding: 5%;
+    margin-top: 2%;
+}
+
+button, input[type="submit"] {
+    background-color: #062f4f;
+    color: #f8eee7;
+    border: solid 1px #062f4f;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(248,238,231);
+    color: rgb(41,41,122);
+    border: solid 1px rgb(41,41,122);
+    transition: .5s;
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(248,238,231);
+    color: rgb(41,41,122);
+    border: solid 1px rgb(41,41,122);
+    transition: .5s;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 48%;
+    height: 25vh;
+    margin: 1% 0;
+    background-color: white;
+    position: relative;
+    background-color: #f8eee7;
+    border-radius: 40px 0 0 40px;
+    border: solid 2px #887bd4;
+    overflow: hidden;
+    transition: all 1s;
+    opacity: 1;
+    display: block;
+}
+
+.img-left {
+    width: 30%;
+    height: 95%;
+    max-height: 95%;
+    max-width: 42%;
+    overflow: hidden !important;
+    padding: 1% 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.info-right {
+    height: 100%;
+    width: 70%;
+    float: right;
+    position: relative;
+}
+
+h2.title {
+    font-size: 1.6vw;
+    width: 100%;
+    text-align: center;
+    margin-top: 1%;
+}
+
+p.desc {
+    font-size: 1.2vw;
+    width: 100%;
+    text-align: center;
+}
+
+.time-to-cook {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    width: 45%;
+    height: 32%;
+    background-color: #062f4f;
+    color: #f8eee7;
+    border: #062f4f;
+    padding: 2% 0;
+    box-sizing: border-box;
+    font-size: 1.4vw;
+}
+
+#recipeSubmit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45%;
+    height: 32%;
+    font-size: 1.3vw;
+}
+
+}
+
+

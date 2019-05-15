@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/recipe_details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>{{title}}</title>
+</head>
+<body>
+    <nav id="nav">
+        <form method="GET" action="{{url_for('home')}}">
+            <button class="btn"><i class="fa fa-home"></i> Home</button>
+        </form>
+        <form action="{{url_for('add_form')}}">
+            <button id=add>Add A recipe</button>
+        </form>
+    </nav>
+    <div id="fullRecipeTop">
+        <div id="fullRecipeTopLeft">
+            <h1>{{title}}</h1>
+            <h2>{{description}}</h2>
+            <h3>{{time}} to prep and cook</h3>
+        </div>
+        <div id="fullRecipeTopRight">
+            <img src="../static/images/{{img}}" alt="">
+        </div>
+    </div>
+    <div id="fullRecipeBottom">
+        <div id="fullRecipeBottomRight">
+            <ul>
+            {% for ingredient in ingredients_list %}
+            <li>{{ingredient}}</li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div id="fullRecipeBottomLeft">
+            {% for instructions in instructions_list %}
+            <p>{{instructions}}</p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<!-- <img src="../static/images/{{img}}" />
+<p>{{title}}</p>
+<p>{{description}}</p>
+<p>{{time}}</p>
+<p>{{ingredients}}</p>
+<p>{{instructions}}</p> -->

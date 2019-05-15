@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../static/css/add_recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Add A Recipe</title>
+</head>
+<body>
+    <nav id="nav">
+        <form method="GET" action="{{url_for('home')}}">
+            <button class="btn"><i class="fa fa-home"></i> Home</button>
+        </form>
+    </nav>
+
+    <div id="container">
+        <form method="POST" action="{{url_for('add_recipe')}}" id=addRecipe
+        enctype="multipart/form-data">
+
+            <div id="recipeLeft">
+
+                <input type="button" id="fileBtn" value="Add A Picture">
+                <input type="file" name="img_file" id="fileUpload"
+                accept="image/*" style="display:none;" required>
+                <input type="text" name="recipe_title" id='title'
+                placeholder="Enter a title for your recipe" maxlength=30 required>
+                <input type="text" name="recipe_time" id="time"
+                placeholder="How long does it take to cook this recipe?"
+                maxlength=15 required>
+
+                <input type="text" name="recipe_description" id="description"
+                placeholder="Enter a short description for your recipe"
+                maxlength=150 required>
+                <textarea name="recipe_ingredients" id="ingredients"
+                placeholder="Add ingredients (each on a new line) ..." required></textarea>
+                <input type="submit" value="Add Recipe" id="addBtn">
+
+            </div>
+
+            <div id="recipeRight">
+                <textarea name="recipe_instructions" id="instructions"
+                rows="50" placeholder="Enter the cooking instructions here (each instruction on a new line) ..."
+                required></textarea>
+            </div>
+        </form>
+    </div>
+    <script src="../static/scripts/add_recipe.js"></script>
+</body>
+</html>
+
+
+
+<!-- onchange="document.getElementById('fileBtn').style.background =
+                'url(' + window.URL.createObjectURL(this.files[0]) + ')';
+                document.getElementById('fileBtn').style.backgroundSize = 'contain';
+                document.getElementById('fileBtn').value = ''"; -->

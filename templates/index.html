@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../static/css/main.css">
+    <title>Recipes</title>
+</head>
+<body>
+    <nav id="nav">
+        <form action="{{url_for('add_form')}}">
+            <button id=add>Add A recipe</button>
+        </form>
+        <input type="text" id="search" placeholder="Search recipes ...">
+    </nav>
+   <div id="container">
+    {% for recipe_id, img, title, desc, time in zip %}
+    <div class="card">
+        <div class="img-left" style="background: url('../static/images/{{img}}'); background-size: 100% 100%; background-repeat: no-repeat;"></div>
+        <div class="info-right">
+            <h2 class="title">{{title}}</h2>
+            <p class="desc">{{desc}}</p>
+            <div class="cardBottom">
+                <p class="time-to-cook">{{time}} recipe</p>
+                <form action="{{url_for('recipe_details')}}" enctype="multipart/form-data" method="POST">
+                    <input type="hidden" name="recipe_id" value="{{recipe_id}}">
+                    <input type="submit" value="Get Full Recipe" id="recipeSubmit">
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+   </div>
+   <script src="../static/scripts/home.js" type="text/javascript"></script>
+</body>
+</html>
+
+
+<!--        <div class="card">
+           <div class="img-left"><img src="../static/images/jambalaya.jpg" alt=""></div>
+           <div class="info-right">
+               <h2 class="title">Chicken & Chorizo Jambalaya</h2>
+               <p class="desc">A Cajun-inspired rice pot recipe with spicy Spanish sausage, sweet peppers and tomatoes.</p>
+               <p class="time-to-cook">60mins</p>
+           </div>
+       </div>
+       <div class="card">
+           <div class="img-left"><img src="../static/images/puffpie.jpg" alt=""></div>
+           <div class="info-right">
+               <h2 class="title">Chicken & Mushroom Puff Pie</h2>
+               <p class="desc">This is just what you need on a cold night. Serve with creamy mashed potatoes</p>
+               <p class="time-to-cook">75mins</p>
+           </div>
+       </div>
+       <div class="card">
+           <div class="img-left"><img src="../static/images/moroccan.jpg" alt=""></div>
+           <div class="info-right">
+               <h2 class="title">Moroccan Chicken</h2>
+               <p class="desc">You don't need a clay pot to whip up a fragrant, North Africa tagine - throw it all in a casserole dish and top with feta, mint and lemon</p>
+               <p class="time-to-cook">70mins</p>
+           </div>
+       </div> -->

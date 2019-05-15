@@ -1,0 +1,143 @@
+body {
+    text-align: center;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(248,238,231,0.8), rgba(248,238,231,0.8)),
+    url('../images/cocina.gif');
+    color: rgb(6,47,79);
+    background-attachment: fixed;
+}
+
+#nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1%;
+    background-color: rgb(6,47,79);
+    color: rgb(6,47,79);
+    box-sizing: border-box;
+    border-bottom: solid 4px #887bd4;
+}
+
+#nav .btn {
+    font-size: 1.2vw;
+    float: left;
+    margin-left: 2%;
+    padding: .5% 1.5%;
+    background-color: rgb(248,238,231);
+    border: solid 1px #062f4f;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#nav .btn:hover {
+    background-color: rgb(41,41,122);
+    color: rgb(248,248,231);
+    border: solid 1px rgb(248,238,231);
+}
+
+#nav .fa-home {
+    font-size: 1.8vw;
+}
+
+#add {
+    font-size: 1.2vw;
+    float: right;
+    margin-right: 2%;
+    padding: .7% 1.5%;
+    background-color: rgb(248,238,231);
+    border: solid 1px #062f4f;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#add:hover {
+    background-color: rgb(41,41,122);
+    color: rgb(248,248,231);
+    border: solid 1px rgb(248,238,231);
+}
+
+#fullRecipeTop {
+    height: 30vh;
+    width: 75%;
+    margin: 10% auto 2% auto;
+    border: solid 1px black;
+    padding: 2%;
+    position: relative;
+    background-color: rgba(228,218,211,.7);
+    border: rgb(136,123,212) solid 2px;
+}
+
+#fullRecipeTopLeft {
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin: -2% 10% 0 10%;
+}
+
+#fullRecipeTopLeft h1 {
+    font-size: 2.5vw;
+}
+
+#fullRecipeTopLeft h2 {
+    font-size: 1.2vw;
+    text-align: left;
+    margin: 5% 0;
+}
+
+#fullRecipeTopLeft h3 {
+    font-size: 1.8vw;
+}
+
+#fullRecipeTopRight {
+    width: 30%;
+    float: right;
+}
+
+#fullRecipeTopRight img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-left: rgb(136,123,212) solid 2px;
+}
+
+#fullRecipeBottom {
+    width: 85%;
+    text-align: left;
+    font-size: 1.3vw;
+    margin: 5% auto;
+    position: relative;
+}
+
+#fullRecipeBottomRight {
+    float: right;
+    width: 30%;
+    padding: 1%;
+    background-color: rgba(41,41,122,.6);
+    color: rgb(248,238,231);
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-right: -4.2%;
+    border-bottom: solid 2px rgb(136,123,212);
+    border-left: solid 2px rgb(136,123,212);
+}
+
+#fullRecipeBottomRight li {
+    margin: .5% 0;
+}
+
+#fullRecipeBottomLeft {
+    background-color: rgba(228,218,211,.7);
+    margin-right: 4%;
+    padding: 2%;
+    width: 100%;
+    float: none;
+    border: solid 2px rgb(136,123,212);
+}
+
+#fullRecipeBottomLeft p {
+    margin: 1.5% 0;
+    width: 90%;
+    /*float: none;*/
+}
